@@ -1,0 +1,27 @@
+[project]
+name = "hiresignal"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Nigel Ng", email = "nigelng8732@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "black>=26.5.1",
+    "deltalake>=1.6.2",
+    "faker>=40.36.0",
+    "pandas>=3.0.5",
+    "pre-commit>=4.6.1",
+    "pyarrow>=25.0.0",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.2",
+    "ruff>=0.16.1",
+]
+
+[project.scripts]
+hiresignal = "hiresignal:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
